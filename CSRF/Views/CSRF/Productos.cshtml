@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Productos";
+}
+
+<h2>Productos</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        <input value="m8" type="checkbox" name="producto" class="form-control" style="float:left; width:15px;" />
+        <img src="~/images/m8.png" height="200" width="200" />
+        <label>Bmw M8</label>
+    </div>
+    <hr />
+    <div>
+        <input value="m2" type="checkbox" name="producto" class="form-control" style="float:left; width:15px;" />
+        <img src="~/images/m2.png" height="200" width="200" />
+        <label>Bmw M2</label>
+    </div>
+    <hr />
+    <div>
+        <input value="2cv" type="checkbox" name="producto" class="form-control" style="float:left; width:15px;" />
+        <img src="~/images/c2.png" height="200" width="200" />
+        <label>Cintroen 2Cv</label>
+    </div>
+    <br />
+    <button type="submit" class="btn-success">Comprar</button>
+
+  
+    
+}
+
+

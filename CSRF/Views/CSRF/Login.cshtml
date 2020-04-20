@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@if (ViewBag.Mensaje != null)
+{
+    <h2>@ViewBag.Mensaje</h2>
+}
+
+<form method="post">
+    <div>
+        <label for="usuario">Usuario :</label>
+        <input type="text" id="usuario" name="usuario" class="form-control" />
+    </div>
+    <br />
+    <div>
+        <label for="pass">Contraseña :</label>
+        <input type="password" id="pass" name="pass" class="form-control" />
+    </div>
+    <div>
+        <button type="submit" class="btn-success">Iniciar Sesión!</button>
+    </div>
+</form>
